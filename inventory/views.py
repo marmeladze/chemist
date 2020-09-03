@@ -20,3 +20,7 @@ def index(request):
     last_companies = Company.objects.order_by('-pk')[:20]
     context = {'last_added_companies': last_companies}
     return render(request, 'inventory/index.html', context)
+
+def drugs(request):
+    last_added = Drug.objects.all()
+    return HttpResponse(f'')

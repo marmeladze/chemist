@@ -24,3 +24,19 @@ for company in companies:
 
 
 
+### Adding suuport for legacy db
+
+
+```sh
+python manage.py inspectdb
+```
+
+Inspect changes on terminal output. Change model/field names. 
+
+```sh
+python manage.py migrate
+```
+
+
+
+

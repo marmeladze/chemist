@@ -1,7 +1,7 @@
 <ul>
   {% for company in last_added_companies  %}
     <li>
-      <p>{{ company.name }} /  {{ company.country }} </p>
+      <p><a href='companies/{{company.id}}/drugs'>{{ company.name }} </a>/ {{ company.country }} </p>
     </li>
   {% endfor %}
 </ul>

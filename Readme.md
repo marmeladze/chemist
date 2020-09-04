@@ -24,11 +24,11 @@ for company in companies:
 
 
 
-### Adding suuport for legacy db
+### Adding support for legacy db
 
 
 ```sh
-python manage.py inspectdb
+python manage.py inspectdb > $APP_NAME/models.py
 ```
 
 Inspect changes on terminal output. Change model/field names. 
